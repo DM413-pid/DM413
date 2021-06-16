@@ -1,25 +1,24 @@
 # DM413
 
 code for  "Adaptive Distribution Calibration for FSL via Optimal Transport"
-Adaptive Distribution Calibration for FSL via Optimal Transport
 
-Backbone Training
-We use the same backbone network and training strategies as 'S2M2_R'. Please refer to [here](https://github.com/nupurkmr9/S2M2_fewshot) for the backbone training.
+## Backbone Training
+We use the same backbone network and training strategies as [S2M2_R](https://arxiv.org/pdf/1907.12087.pdf). Please refer to [here](https://github.com/nupurkmr9/S2M2_fewshot) for the backbone training.
 
-Extract and save features
-After training the backbone as 'S2M2_R', extract features as below:
+## Extract and save features
+After training the backbone as [S2M2_R](https://arxiv.org/pdf/1907.12087.pdf), extract features as below:
 
-Create an empty 'checkpoints' directory.
-Run: 
+Create an empty `checkpoints` directory. Then run: 
+```python
 python save_plk.py --dataset [miniImagenet/CUB] 
+```
 
 Or you can directly download the extracted features/pretrained models from the [link](
-https://drive.google.com/drive/folders/1IjqOYLRH0OwkMZo8Tp4EG02ltDppi61n?usp=sharing)
-
+https://drive.google.com/drive/folders/1IjqOYLRH0OwkMZo8Tp4EG02ltDppi61n?usp=sharing).
 
 After downloading the extracted features, please adjust your file path according to the code.
 
-Evaluate our distribution calibration
+## Evaluate our distribution calibration
 To evaluate our distribution calibration method, run:
 ```python
 python evaluate_ADC.py
