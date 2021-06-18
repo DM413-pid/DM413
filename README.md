@@ -14,7 +14,7 @@ python save_plk.py --dataset [miniImagenet/CUB]
 ```
 
 Or you can directly download the extracted features/pretrained models from the [link](
-https://drive.google.com/drive/folders/1IjqOYLRH0OwkMZo8Tp4EG02ltDppi61n?usp=sharing).
+https://drive.google.com/drive/folders/1IjqOYLRH0OwkMZo8Tp4EG02ltDppi61n?usp=sharing)(for miniimagenet and cub) and [link](https://drive.google.com/file/d/1CV7VdGTYffeS964Ov0P78YsdnMz3DCWY/view?usp=sharing).
 
 After downloading the extracted features, please adjust your file path according to the code.
 
